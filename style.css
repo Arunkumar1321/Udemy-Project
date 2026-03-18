@@ -82,6 +82,14 @@ body {
     color: white;
     padding: 10px;
     border-radius: 30px;
+    cursor: pointer;
+    border: #A639F0 solid 1px;
+}
+.categories p:hover{
+    background-color: white;
+    color: black;
+    transition:1s ;
+    border: #A639F0 solid 1px;
 }
 .image-section img{
     width: 100%;
@@ -173,7 +181,21 @@ body {
     margin: 10px;
     border: black solid 2px;
     border-radius: 10px;
+    animation-name: zoom;
+    animation-duration: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .image-section{
     position: relative;
